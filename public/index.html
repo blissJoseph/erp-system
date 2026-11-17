@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ERP System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand">ERP<span>draft</span></div>
+    <nav id="nav">
+      <a href="#dashboard">Dashboard</a>
+      <div class="nav-group">Sales</div>
+      <a href="#sales-orders">Sales Orders</a>
+      <a href="#customers">Customers</a>
+      <div class="nav-group">Purchasing</div>
+      <a href="#purchase-orders">Purchase Orders</a>
+      <a href="#suppliers">Suppliers</a>
+      <div class="nav-group">Inventory</div>
+      <a href="#products">Products</a>
+      <div class="nav-group">HR</div>
+      <a href="#employees">Employees</a>
+    </nav>
+  </aside>
+  <main>
+    <header class="topbar"><h1 id="title">Dashboard</h1><div id="actions"></div></header>
+    <section id="view"></section>
+  </main>
+
+  <dialog id="modal">
+    <form id="modal-form" method="dialog">
+      <h2 id="modal-title"></h2>
+      <div id="modal-body"></div>
+      <p id="modal-error" class="error"></p>
+      <div class="modal-actions">
+        <button type="button" class="btn" id="modal-cancel">Cancel</button>
+        <button type="submit" class="btn primary" id="modal-save">Save</button>
+      </div>
+    </form>
+  </dialog>
+  <div id="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>
